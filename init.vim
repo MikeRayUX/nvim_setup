@@ -30,19 +30,9 @@ nnoremap <silent> <C-up> :vertical resize -3 <CR>
 nnoremap Y "+y
 vnoremap Y "+y
 nnoremap yY ^"+y$
-
 nnoremap <silent> <C-b> :NERDTreeToggle <CR>
 nnoremap <silent> <C-`> :below terminal <CR>
 xnoremap <Leader>r :s///gc<Left><Left>
-"xnoremap <silent><C-r> :s///gc <CR>
-"xnoremap <silent> <C-r> :below terminal <CR>
-"xnoremap <Leader>r :below terminal<Left><Left>
-"nnoremap <silent> <C-q> :q <CR>
-"silent !stty -ixon > /dev/null 2>/dev/null
-"nmap <silent> <C-Q> :q <CR>
-"toggles line numbers"
-"nnoremap <silent> <C-l> :set nonumber! <CR>
-
 
 "=======================================================
             "VIM DEFAULT SYSTEM SETTINGS
@@ -184,4 +174,3 @@ let g:closetag_close_shortcut = '<leader>>'
 "autocmd VimEnter * NERDTree 
 autocmd Vimenter * ++nested colorscheme gruvbox
 "colorscheme atom-dark-256
-
