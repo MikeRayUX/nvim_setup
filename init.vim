@@ -33,7 +33,8 @@ nnoremap yY ^"+y$
 nnoremap <silent> <C-b> :NERDTreeToggle <CR>
 nnoremap <silent> <C-`> :below terminal <CR>
 xnoremap <Leader>r :s///gc<Left><Left>
-
+" ensures that nerdtree (file tree) reloads automatically when focusing it
+autocmd BufEnter NERD_tree_* | execute 'normal R'
 "=======================================================
             "VIM DEFAULT SYSTEM SETTINGS
 "======================================================
