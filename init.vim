@@ -1,6 +1,11 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
+
 syntax on
+
+" require a lua file
+lua require("plugins")
+
 "source ~/.vimrc
 "======================================================
                     "MISC TIPS"
@@ -11,7 +16,7 @@ syntax on
 ":checkhealth to see if there are any missing packages (nvim)
 "
 " To Comment Out Multiple Lines
-" Ctrl + v to begin selection
+" ctrl + v to begin selection
 " number of lines to select (ex: 10j)
 " shift + i to insert the commment character (ex #)
 " esc to apply to all lines
@@ -35,6 +40,9 @@ nnoremap <silent> <C-`> :below terminal <CR>
 xnoremap <Leader>r :s///gc<Left><Left>
 " ensures that nerdtree (file tree) reloads automatically when focusing it
 autocmd BufEnter NERD_tree_* | execute 'normal R'
+" ensures clear highlighting on esc from using * to highlight all instances of
+" a word
+nnoremap <esc> :nohl<Enter>
 "=======================================================
             "VIM DEFAULT SYSTEM SETTINGS
 "======================================================
