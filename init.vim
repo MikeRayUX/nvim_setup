@@ -4,7 +4,8 @@ let &packpath = &runtimepath
 syntax on
 
 " require a lua file
-lua require("plugins")
+"lua require("plugins")
+"lua require("mappings")
 
 "source ~/.vimrc
 "======================================================
@@ -20,6 +21,9 @@ lua require("plugins")
 " number of lines to select (ex: 10j)
 " shift + i to insert the commment character (ex #)
 " esc to apply to all lines
+" 
+" To jump to a variable/functions definition, go to the start of the word and
+" then type 'gd'. It will highlight the first occurance of it
 "
 "======================================================
                 "CUSTOM KEY REBINDS
